@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Chai Adda | Get in Touch, Reservations &amp; FAQ</title>
+  <meta name="description" content="Get in touch with Chai Adda — book a table, ask about catering, events, franchise or careers. Phone, email, opening hours, map and FAQ.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="canonical" href="https://berivishnu9-max.github.io/chai-adda/contact.html">
+  <meta property="og:title" content="Contact — Chai Adda">
+  <meta property="og:description" content="Book a table, ask a question, or say hello. We'd love to hear from you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ContactPage","name":"Contact Chai Adda","mainEntity":{"@type":"Organization","name":"Chai Adda","email":"hello@chai-adda.example","telephone":"+44 141 555 0192","address":{"@type":"PostalAddress","streetAddress":"48 Sauchiehall Street","addressLocality":"Glasgow","postalCode":"G2 3AB","addressCountry":"GB"}}}
+  </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — Chai Adda">
+  <meta name="twitter:description" content="Book a table, ask a question, or say hello.">
+  <meta name="twitter:image" content="images/hero.jpg">
+  <meta property="og:site_name" content="Chai Adda">
+  <meta property="og:image" content="images/hero.jpg">
+</head>
+<body class="hero-dark">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Chai Adda home">
+        <img src="assets/logo.svg" alt="" width="38" height="38">
+        <span class="brand-name">Chai Adda<small>Authentic. Every Time.</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" aria-label="Open your order">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.4a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.6L23 7H6"/></svg>
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
+        <a href="order.html" class="btn btn-dark btn-sm">Order Online</a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html" class="btn btn-primary btn-block">Order Online</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's have a <span class="serif-accent" style="color:#eab873">chat over chai</span></h1>
+      <p>Questions, bookings, catering or just a hello — we read every message and reply quickly.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SPLIT -->
+  <section class="section">
+    <div class="wrap">
+      <div class="contact-split">
+
+        <!-- form -->
+        <div data-reveal>
+          <span class="eyebrow">Send a message</span>
+          <h2 style="font-size:clamp(1.7rem,3vw,2.3rem);margin:var(--s2) 0 var(--s4)">We'd love to hear from you</h2>
+          <div class="form-success" id="contactSuccess">
+            <svg viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+            <span>Thanks — your message is on its way. We'll be in touch within one working day.</span>
+          </div>
+          <form id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="cName">Full name</label>
+                <input id="cName" name="name" type="text" autocomplete="name" required>
+                <span class="err-msg">Please enter your name.</span>
+              </div>
+              <div class="field">
+                <label for="cEmail">Email</label>
+                <input id="cEmail" name="email" type="email" autocomplete="email" required>
+                <span class="err-msg">Please enter a valid email.</span>
+              </div>
+              <div class="field">
+                <label for="cPhone">Phone <span style="color:var(--faint);font-weight:400">(optional)</span></label>
+                <input id="cPhone" name="phone" type="tel" autocomplete="tel">
+                <span class="err-msg"></span>
+              </div>
+              <div class="field">
+                <label for="cSubject">Subject</label>
+                <select id="cSubject" name="subject" required>
+                  <option value="">Choose a topic…</option>
+                  <option>General enquiry</option>
+                  <option>Catering &amp; events</option>
+                  <option>Corporate &amp; office orders</option>
+                  <option>Franchise enquiry</option>
+                  <option>Careers</option>
+                  <option>Feedback</option>
+                </select>
+                <span class="err-msg">Please choose a topic.</span>
+              </div>
+              <div class="field field-full">
+                <label for="cMessage">Message</label>
+                <textarea id="cMessage" name="message" required placeholder="How can we help?"></textarea>
+                <span class="err-msg">Please add a short message.</span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top:var(--s3)">Send Message</button>
+            <p class="form-note">By sending, you agree we can reply to your enquiry. We never share your details. (Demo form — nothing is actually sent.)</p>
+          </form>
+        </div>
+
+        <!-- info + map -->
+        <div data-reveal data-reveal-delay="1">
+          <div class="contact-info-card">
+            <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <div><h4>Flagship café</h4><p>48 Sauchiehall Street, Glasgow G2 3AB</p></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg></div>
+            <div><h4>Phone</h4><a href="tel:+441415550192">+44 141 555 0192</a></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="ci-icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></div>
+            <div><h4>Email</h4><a href="mailto:hello@chai-adda.example">hello@chai-adda.example</a></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="ci-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div><h4>Opening hours</h4><p>Mon–Fri 8:00–22:00 · Sat 9:00–23:00 · Sun 9:00–21:00</p></div>
+          </div>
+          <div class="map-embed" style="height:240px;margin-top:var(--s3)">
+            <div class="map-fallback" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <div><strong>48 Sauchiehall Street</strong><br><a href="https://www.openstreetmap.org/?mlat=55.8652&amp;mlon=-4.2570#map=16/55.8652/-4.2570" target="_blank" rel="noopener">Open the map ↗</a></div>
+            </div>
+            <iframe
+              title="Map to Chai Adda City Centre"
+              loading="lazy"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-4.2700%2C55.8600%2C-4.2440%2C55.8710&amp;layer=mapnik&amp;marker=55.8652%2C-4.2570"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="section-tight" id="reserve" style="background:var(--cream-deep)">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Book a table</span>
+        <h2>Reserve your <span class="serif-accent">corner</span></h2>
+        <p>Planning a catch-up or a bigger gathering? Reserve a table and we'll have it waiting.</p>
+      </div>
+      <div style="max-width:760px;margin:0 auto" data-reveal>
+        <div class="form-success" id="reserveSuccess">
+          <svg viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></svg>
+          <span id="reserveSuccessText">Table requested — we'll confirm by email shortly.</span>
+        </div>
+        <form id="reserveForm" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="rName">Name</label>
+              <input id="rName" type="text" autocomplete="name" required>
+              <span class="err-msg">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="rPhone">Phone</label>
+              <input id="rPhone" type="tel" autocomplete="tel" required>
+              <span class="err-msg">Please enter a phone number.</span>
+            </div>
+            <div class="field">
+              <label for="rLocation">Café</label>
+              <select id="rLocation" required>
+                <option>City Centre — Sauchiehall St</option>
+                <option>West End — Byres Road</option>
+                <option>Southside — Victoria Road</option>
+              </select>
+              <span class="err-msg"></span>
+            </div>
+            <div class="field">
+              <label for="rGuests">Guests</label>
+              <select id="rGuests" required>
+                <option>1</option><option selected>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8+</option>
+              </select>
+              <span class="err-msg"></span>
+            </div>
+            <div class="field">
+              <label for="rDate">Date</label>
+              <input id="rDate" type="date" required>
+              <span class="err-msg">Please choose a date.</span>
+            </div>
+            <div class="field">
+              <label for="rTime">Time</label>
+              <input id="rTime" type="time" value="18:30" required>
+              <span class="err-msg">Please choose a time.</span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:var(--s3)">Request Table</button>
+          <p class="form-note">We hold reservations for 15 minutes. Groups of 8+ — please call us directly. (Demo form.)</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Good to know</span>
+        <h2>Frequently <span class="serif-accent">asked</span></h2>
+      </div>
+      <div class="faq" data-reveal>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you cater for events and offices?<span class="plus" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>Yes — from a tray of chai and samosas for the team to full event catering. Use the contact form above with "Catering &amp; events" and we'll build a menu around you.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What are my options for dietary needs?<span class="plus" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>Every menu item is clearly marked vegetarian or vegan, with spice levels shown. Many drinks can be made with oat milk. If you have an allergy, tell us and we'll guide you to safe choices.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is there a loyalty programme?<span class="plus" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>There is — every tenth chai is on us, plus member-only seasonal offers. Ask at the counter or join the newsletter to sign up.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you offer student discounts?<span class="plus" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>We do — 15% off with a valid student ID in café, or use code <strong>STUDENT</strong> when you order online.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How does delivery work?<span class="plus" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>Order online for delivery across central Glasgow, typically 30–40 minutes. Delivery is free over £15, otherwise £2.49. Prefer to collect? Pickup is usually ready in 10–15 minutes.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Are you hiring?<span class="plus" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>We're always glad to meet warm, curious people who love hospitality. Send us a note under "Careers" with a little about yourself.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer-slot"></div>
+
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Your order">
+    <div class="drawer-head">
+      <h3>Your Order</h3>
+      <button class="drawer-close" data-close-cart aria-label="Close order"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot">
+      <div class="cart-row"><span>Subtotal</span><span id="cartSubtotal">£0.00</span></div>
+      <div class="cart-row"><span>Delivery</span><span id="cartDelivery">Free</span></div>
+      <div class="cart-row total"><span>Total</span><span id="cartTotal">£0.00</span></div>
+      <p class="nl-note" id="cartFreeNote" style="color:var(--orange-deep);text-align:center;margin:0 0 10px"></p>
+      <button class="btn btn-primary btn-block" id="checkoutBtn" disabled>Go to Checkout</button>
+      <p class="cart-note">Demo checkout — this is a case-study site.</p>
+    </div>
+  </aside>
+
+  <a href="order.html" class="float-order" aria-label="Order online">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h3l2.4 12.4a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.6L23 7H6"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+    <span>Order Online</span>
+  </a>
+
+  <script src="js/photos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

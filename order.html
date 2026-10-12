@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online — Chai Adda | Delivery &amp; Pickup in Glasgow</title>
+  <meta name="description" content="Order Chai Adda online for delivery or pickup. Signature chai, street food and more — with coupons, live order summary and fast collection.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="canonical" href="https://berivishnu9-max.github.io/chai-adda/order.html">
+  <meta property="og:title" content="Order Online — Chai Adda">
+  <meta property="og:description" content="Delivery or pickup — chai and street food, ready when you are.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","name":"Order Online — Chai Adda","description":"Order Chai Adda online for delivery or pickup in Glasgow.","potentialAction":{"@type":"OrderAction","deliveryMethod":["http://purl.org/goodrelations/v1#DeliveryModeOwnFleet","http://purl.org/goodrelations/v1#DeliveryModePickUp"]}}
+  </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Order Online — Chai Adda">
+  <meta name="twitter:description" content="Delivery or pickup — chai and street food, ready when you are.">
+  <meta name="twitter:image" content="images/hero.jpg">
+  <meta property="og:site_name" content="Chai Adda">
+  <meta property="og:image" content="images/hero.jpg">
+</head>
+<body class="hero-dark">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Chai Adda home">
+        <img src="assets/logo.svg" alt="" width="38" height="38">
+        <span class="brand-name">Chai Adda<small>Authentic. Every Time.</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" aria-label="Jump to your order">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.4a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.6L23 7H6"/></svg>
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
+        <a href="order.html" class="btn btn-dark btn-sm">Order Online</a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html" class="btn btn-primary btn-block">Order Online</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="padding-bottom:var(--s5)">
+    <div class="wrap">
+      <span class="eyebrow">Order Online</span>
+      <h1>Chai, <span class="serif-accent" style="color:#eab873">ready when you are</span></h1>
+      <p>Delivery to your door or pickup from your nearest café. Build your order below.</p>
+    </div>
+  </section>
+
+  <main id="main" tabindex="-1" class="section-tight" style="padding-top:var(--s4)">
+    <div class="wrap">
+
+      <!-- order type bar -->
+      <div class="order-bar" data-reveal>
+        <div class="seg" role="tablist" aria-label="Order type">
+          <button type="button" class="active" data-ordertype="delivery" role="tab" aria-selected="true">
+            <svg viewBox="0 0 24 24"><path d="M3 13h11V6H3zM14 9h4l3 3v4h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Delivery
+          </button>
+          <button type="button" data-ordertype="pickup" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24"><path d="M5 11h14l-1 9a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1z"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Pickup
+          </button>
+        </div>
+        <div class="field" id="deliveryField">
+          <label for="postcode">Delivery postcode</label>
+          <input id="postcode" type="text" placeholder="e.g. G2 3AB" autocomplete="postal-code" value="G2 3AB">
+        </div>
+        <div class="field" id="pickupField" hidden>
+          <label for="branch">Collect from</label>
+          <input id="branch" type="text" value="City Centre — 48 Sauchiehall St" readonly style="width:250px">
+        </div>
+        <div class="eta">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span id="etaText">Est. 30–40 min</span>
+        </div>
+      </div>
+
+      <!-- two-column order layout -->
+      <div class="order-layout" style="margin-top:var(--s4)">
+
+        <!-- LEFT: menu -->
+        <div>
+          <div class="menu-search" style="max-width:none;margin-bottom:var(--s3)">
+            <svg viewBox="0 0 24 24" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input id="menuSearch" type="search" placeholder="Search the menu…" aria-label="Search the menu" autocomplete="off">
+          </div>
+          <div class="filters" id="catFilters" style="justify-content:flex-start" aria-label="Filter by category"></div>
+          <div class="filters" style="margin-top:12px;justify-content:flex-start" aria-label="Dietary filters">
+            <button class="chip active" data-filter-diet="all">Everything</button>
+            <button class="chip" data-filter-diet="popular">★ Popular</button>
+            <button class="chip" data-filter-diet="veg">Vegetarian</button>
+            <button class="chip" data-filter-diet="vegan">Vegan</button>
+          </div>
+          <div id="menuRoot" style="margin-top:var(--s3)"></div>
+        </div>
+
+        <!-- RIGHT: summary -->
+        <aside class="order-summary" id="orderSummary" aria-label="Order summary">
+          <div class="order-summary-head">
+            <h3>Your Order</h3>
+            <span id="summaryCount" style="color:var(--faint);font-size:.86rem">0 items</span>
+          </div>
+          <div class="order-summary-body" id="summaryBody">
+            <div class="mini-empty">Your order is empty.<br>Add something from the menu.</div>
+          </div>
+          <div class="order-summary-foot">
+            <div class="coupon-row">
+              <input id="couponInput" type="text" placeholder="Promo code" aria-label="Promo code">
+              <button class="btn btn-dark btn-sm" id="couponApply" type="button">Apply</button>
+            </div>
+            <p class="coupon-msg" id="couponMsg" aria-live="polite"></p>
+            <div class="cart-row"><span>Subtotal</span><span id="sumSubtotal">£0.00</span></div>
+            <div class="cart-row" id="discountRow" hidden><span id="discountLabel">Discount</span><span id="sumDiscount">-£0.00</span></div>
+            <div class="cart-row"><span id="feeLabel">Delivery</span><span id="sumFee">£0.00</span></div>
+            <div class="cart-row total"><span>Total</span><span id="sumTotal">£0.00</span></div>
+            <p class="pay-icons">
+              <span>We accept</span>
+              <span class="pay-chip">VISA</span><span class="pay-chip">Mastercard</span><span class="pay-chip">AMEX</span>
+              <span class="pay-chip">Apple&nbsp;Pay</span><span class="pay-chip">Google&nbsp;Pay</span><span class="pay-chip">PayPal</span>
+            </p>
+            <button class="btn btn-primary btn-block" id="placeOrder" disabled style="margin-top:var(--s3)">Place Order</button>
+            <p class="cart-note">Demo checkout — no payment is taken on this case-study site.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-slot"></div>
+
+  <script src="js/photos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/order.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

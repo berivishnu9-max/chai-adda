@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Chai Adda</title>
+  <meta name="description" content="That page has gone cold. Find your way back to the Chai Adda menu, locations or ordering.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav scrolled" id="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Chai Adda home">
+        <img src="assets/logo.svg" alt="" width="38" height="38">
+        <span class="brand-name">Chai Adda<small>Authentic. Every Time.</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" aria-label="Open your order">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.4a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.6L23 7H6"/></svg>
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
+        <a href="order.html" class="btn btn-dark btn-sm">Order Online</a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html" class="btn btn-primary btn-block">Order Online</a>
+  </div>
+
+  <main id="main" tabindex="-1" class="section" style="padding-top:calc(var(--nav-h) + var(--s6));text-align:center">
+    <div class="wrap" style="max-width:620px">
+      <img src="assets/art/chai.svg" alt="" width="120" height="120"
+           style="margin:0 auto var(--s4);opacity:.5;filter:invert(24%) sepia(18%) saturate(900%) hue-rotate(112deg)">
+      <span class="eyebrow">Error 404</span>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.4rem);margin:var(--s2) 0 var(--s3)">
+        This cup went <span class="serif-accent">cold</span>
+      </h1>
+      <p class="lead">We couldn't find that page. It may have moved, or the link might have a typo.
+         Let's get you back to something warm.</p>
+      <div class="hero-cta" style="justify-content:center;margin-top:var(--s4)">
+        <a href="menu.html" class="btn btn-primary">Explore the Menu</a>
+        <a href="index.html" class="btn btn-ghost">Back Home</a>
+      </div>
+      <p style="margin-top:var(--s5);color:var(--muted);font-size:.94rem">
+        Looking for something specific? Try
+        <a href="locations.html" style="color:var(--cta);font-weight:600;text-decoration:underline">our cafés</a>,
+        <a href="order.html" style="color:var(--cta);font-weight:600;text-decoration:underline">ordering online</a>, or
+        <a href="contact.html" style="color:var(--cta);font-weight:600;text-decoration:underline">get in touch</a>.
+      </p>
+    </div>
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Your order">
+    <div class="drawer-head">
+      <h3>Your Order</h3>
+      <button class="drawer-close" data-close-cart aria-label="Close order"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot">
+      <div class="cart-row"><span>Subtotal</span><span id="cartSubtotal">£0.00</span></div>
+      <div class="cart-row"><span>Delivery</span><span id="cartDelivery">Free</span></div>
+      <div class="cart-row total"><span>Total</span><span id="cartTotal">£0.00</span></div>
+      <p class="nl-note" id="cartFreeNote" style="color:var(--cta);text-align:center;margin:0 0 10px"></p>
+      <button class="btn btn-primary btn-block" id="checkoutBtn" disabled>Go to Checkout</button>
+      <p class="cart-note">Demo checkout — this is a case-study site.</p>
+    </div>
+  </aside>
+
+  <script src="js/photos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
